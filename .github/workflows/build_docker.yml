@@ -38,8 +38,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner.toLower() }}/deployment-exercise:${{ github.ref_name }}
-            ghcr.io/${{ github.repository_owner.toLower() }}/deployment-exercise:latest
+            ghcr.io/${{ github.repository_owner || 'evanwharris' }}/deployment-exercise:${{ github.ref_name }}
+            ghcr.io/${{ github.repository_owner || 'evanwharris' }}/deployment-exercise:latest
 
       # Step 4 - Make Release on GitHub
       # https://github.com/softprops/action-gh-release
