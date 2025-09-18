@@ -9,7 +9,7 @@ services:
     
     # Docker Image
     # !!TODO - Update this to match your repository !!
-    image: ghcr.io/evanwharris/Deployment-Exercise:latest
+    image: ghcr.io/evanwharris/deployment-exercise:latest
 
     # Container Name
     container_name: example-deploy
